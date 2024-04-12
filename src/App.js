@@ -12,6 +12,10 @@ function App() {
     <div className={darkmode ? "App dark" : "App" }>
       <Layout>
           <button onClick={toggleMode}>Switch</button>
+          <h1>Dupa</h1>
+          <h2>Dupa</h2>
+          <h3>Dupa</h3>
+          <h4>Dupa</h4>
       </Layout>
     </div>
   );
