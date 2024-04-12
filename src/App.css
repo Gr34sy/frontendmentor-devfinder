@@ -7,3 +7,10 @@
   width: 300px;
   height: 80px;
 }
+
+.layout__wrapper{
+  --max-width: 760px;
+  width: min(100% - 2rem, var(--max-width));
+
+  grid-template-rows: auto 1fr;
+}
