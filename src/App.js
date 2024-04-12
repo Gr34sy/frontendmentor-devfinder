@@ -1,6 +1,9 @@
 import "./App.css";
+import { Box } from "./components/Box";
 import { Layout } from "./components/Layout";
 import { useState } from "react";
+import { SearchBar } from "./components/SearchBar";
+import { Header } from "./components/Header";
 
 function App() {
   const [darkmode, setDarkmode] = useState(false);
@@ -11,13 +14,9 @@ function App() {
   return (
     <div className={darkmode ? "App dark" : "App"}>
       <Layout>
-        <button onClick={toggleMode}>Switch</button>
-        <div>
-          <h1>Dupa</h1>
-          <h2>Dupa</h2>
-          <h3>Dupa</h3>
-          <h4>Dupa</h4>
-        </div>
+        <Header onClick={toggleMode}/>
+        <SearchBar />
+        <Box />
       </Layout>
     </div>
   );
