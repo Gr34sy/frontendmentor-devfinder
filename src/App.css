@@ -3,6 +3,7 @@
   display: grid;
 }
 
+/* layout */
 .layout__wrapper{
   --max-width: 860px;
   width: min(100% - 2rem, var(--max-width));
@@ -10,10 +11,12 @@
   grid-template-rows: auto 1fr;
 }
 
+/* header */
 .header{
   grid-template-columns: 1fr auto;
 }
 
+/* box */
 .avatar-div{
   width: 117px;
   height: 117px;
@@ -47,4 +50,13 @@
     gap: 2rem;
     grid-template-columns: auto 1fr;
   }
+}
+
+/* searchbar */
+.grid--searchbar{
+  grid-template-columns: 1fr auto;
+}
+
+label[for="name"]{
+  grid-template-columns: auto 1fr auto;
 }
