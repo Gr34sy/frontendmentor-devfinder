@@ -7,6 +7,8 @@ import { Header } from "./components/Header";
 
 function App() {
   const [darkmode, setDarkmode] = useState(false);
+  const [name, setName] = useState("");
+
   function toggleMode() {
     setDarkmode((prevMode) => !prevMode);
   }
@@ -15,7 +17,7 @@ function App() {
     <div className={darkmode ? "App dark" : "App"}>
       <Layout>
         <Header onClick={toggleMode} darkmode={darkmode}/>
-        <SearchBar />
+        <SearchBar value={name} onChange={setName}/>
         <Box />
       </Layout>
     </div>
