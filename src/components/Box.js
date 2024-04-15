@@ -1,6 +1,6 @@
 export function Box() {
   return (
-    <div className="bg-white-200 dark:bg-slate-800">
+    <div className="bg-white-200 dark:bg-slate-800 border-none p-5 rounded-md">
       <img src="/" alt="Github user avatar" />
       <div>
         <div>
