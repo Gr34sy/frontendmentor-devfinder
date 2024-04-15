@@ -1,7 +1,16 @@
+import avatar from "../assets/DummyAvatar.jpg";
+
 export function Box() {
   return (
-    <div className="bg-white-200 dark:bg-slate-800 border-none p-5 rounded-md">
-      <img src="/" alt="Github user avatar" />
+    <div className="bg-white-200 dark:bg-slate-800 border-none p-10 rounded-lg grid gap-8 grid-cols-auto1fr">
+      <div className="avatar-div">
+        <img
+          src={avatar}
+          alt="Github user avatar"
+          className="w-full h-full rounded-full"
+        />
+      </div>
+
       <div>
         <div>
           <div>

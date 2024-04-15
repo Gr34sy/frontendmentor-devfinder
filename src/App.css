@@ -3,11 +3,6 @@
   display: grid;
 }
 
-.block{
-  width: 300px;
-  height: 80px;
-}
-
 .layout__wrapper{
   --max-width: 860px;
   width: min(100% - 2rem, var(--max-width));
@@ -17,4 +12,13 @@
 
 .header{
   grid-template-columns: 1fr auto;
+}
+
+.avatar-div{
+  width: 117px;
+  height: 117px;
+}
+
+.grid-cols-auto1fr{
+  grid-template-columns: auto 1fr;
 }
