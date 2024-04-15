@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+	--slate-700: '#2b3442';
+	--slate-800: '#1e2a47';
+	--slate-900: '#141d2f';
+	--slate-950: '#222731';
+
+	--white-100: '#ffffff';
+	--white-200: '#fefefe';
+	--white-300: '#f6f8ff';
+
+	--blue-500: '#90A4D4';
+	--blue-600: '#0079ff';
+	--blue-700: '#697c9a';
+	--blue-800: '#4b6a9b';
+}
+
 /* reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

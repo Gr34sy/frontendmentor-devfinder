@@ -14,7 +14,7 @@ function App() {
   return (
     <div className={darkmode ? "App dark" : "App"}>
       <Layout>
-        <Header onClick={toggleMode}/>
+        <Header onClick={toggleMode} darkmode={darkmode}/>
         <SearchBar />
         <Box />
       </Layout>
