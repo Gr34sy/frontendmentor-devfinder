@@ -15,10 +15,36 @@
 }
 
 .avatar-div{
-  width: 117px;
-  height: 117px;
+  width: 70px;
+  height: 70px;
+  display: none;
+}
+.avatar-div--mobile{
+  width: 70px;
+  height: 70px;
+}
+@media(min-width: 925px){
+  .avatar-div--mobile{
+    display: none;
+  }
+
+  .avatar-div{
+    display: block;
+  }
+
+  .grid-cols-auto1fr{
+    grid-template-columns: auto 1fr;
+  }
+
+  .header-title{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.grid-cols-auto1fr{
-  grid-template-columns: auto 1fr;
+@media(max-width: 925px){
+  .grid-cols-auto1fr--mobile{
+    gap: 2rem;
+    grid-template-columns: auto 1fr;
+  }
 }
