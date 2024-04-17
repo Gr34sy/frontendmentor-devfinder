@@ -62,7 +62,7 @@ export function Box() {
           </div>
         </div>
 
-        <div className="flex gap-12 text-blue-800 dark:text-white-100">
+        <div className="flex flex-col sm:flex-row gap-2 sm:gap-12 text-blue-800 dark:text-white-100">
           <div className="grid gap-2">
             <div className="flex gap-2 items-center">
               <img src={iconLocation} alt="location icon" />
