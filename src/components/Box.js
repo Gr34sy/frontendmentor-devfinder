@@ -7,7 +7,7 @@ import { NotAvialable } from "./NotAvialable";
 
 export function Box() {
   return (
-    <div className="bg-white-200 dark:bg-slate-800 p-10 rounded-lg grid gap-8 grid-cols-auto1fr">
+    <div className="bg-white-200 dark:bg-slate-800 p-4 sm:p-10 rounded-lg grid gap-8 grid-cols-auto1fr">
       <div className="avatar-div">
         <img
           src={avatar}
@@ -43,22 +43,22 @@ export function Box() {
           aliquid nostrum praesentium?
         </p>
 
-        <div className="flex justify-between align-center rounded-lg bg-white-400 dark:bg-slate-900 p-5 text-left">
+        <div className="flex justify-between align-center rounded-lg bg-white-400 dark:bg-slate-900 p-2 sm:p-5 text-left">
           <div>
-            <p className="text-blue-800 text-lg dark:text-white-100">Repos</p>
-            <p className="font-bold text-2xl">8</p>
+            <p className="text-blue-800 min-[350px]:text-lg dark:text-white-100">Repos</p>
+            <p className="font-bold min-[350px]:text-2xl">8</p>
           </div>
           <div>
-            <p className="text-blue-800 text-lg dark:text-white-100">
+            <p className="text-blue-800 min-[350px]:text-lg dark:text-white-100">
               Followers
             </p>
-            <p className="font-bold text-2xl">9999</p>
+            <p className="font-bold min-[350px]:text-2xl">9999</p>
           </div>
           <div>
-            <p className="text-blue-800 text-lg dark:text-white-100">
+            <p className="text-blue-800 min-[350px]:text-lg dark:text-white-100">
               Following
             </p>
-            <p className="font-bold text-2xl">150</p>
+            <p className="font-bold min-[350px]:text-2xl">150</p>
           </div>
         </div>
 
