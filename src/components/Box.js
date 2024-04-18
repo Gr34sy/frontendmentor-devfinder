@@ -70,7 +70,7 @@ export function Box({user}) {
 
             <div className="flex gap-2 items-center">
               <img src={iconWebsite} alt="link icon" />
-              {user.blog ? <a href="/" className={user.blog}>{user.blog}</a> : <NotAvialable />}
+              {user.url ? <a href={user.url} className="underline">Check profile</a> : <NotAvialable />}
             </div>
           </div>
 

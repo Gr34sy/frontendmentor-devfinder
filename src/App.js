@@ -34,7 +34,7 @@ function App() {
           createdAt: new Date(data.created_at),
           login: data.login,
           location: data.location,
-          blog: data.blog,
+          url: data.url,
           name: data.name,
           repos: data.public_repos,
           followers: data.followers,
