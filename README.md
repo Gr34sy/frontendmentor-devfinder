@@ -1,19 +1,19 @@
-# Password Generator created with React 
+# Github Devfinder created with React 
 ## The app is my solution of FrontendMentor Challenge 
-### The main functionality of the app is to generate password. Users can set password length and which characters would be contained in the generated password. It was really satisfying and fun challenge.
+### The main functionality of the app is to search for Github user and then display information about him. Users can also switch between dark and light mode. I've used TailwindCss framework in order to learn its basics and main concepts. 
 
 #### Technologies used in the app:
 <img align="left" alt="React" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />
+<img align="left" alt="TailwindCSS" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" style="padding-right:10px;" />
 <img align="left" alt="HTML" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" style="padding-right:10px;" />
-<img align="left" alt="JS" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" style="padding-right:10px;" />
 <img align="left" alt="CSS" width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" style="padding-right:10px;" />
 
 <br/> <br/> <br/> 
 
 #### App Functionalities:
-<p>-> Users can set the password length and choose which characters would be included in the generation process</p>
-<p>-> Users can copy the password to clipboard by clicking on the icon next to it</p>
-<p>-> The app shows strength level of the generated password</p>
+<p>-> Users can search for github user by his username</p>
+<p>-> The app displays information about the user</p>
+<p>-> Users can switch between dark and light theme</p>
 
 <br/> 
 
