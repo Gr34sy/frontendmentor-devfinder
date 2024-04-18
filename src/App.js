@@ -9,22 +9,40 @@ import { useState } from "react";
 
 function App() {
   const [darkmode, setDarkmode] = useState(false);
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(false);
 
   async function searchFor(user) {
     fetch(`https://api.github.com/users/${user}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.message === "Not Found") {
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
           setUser("no results");
 
           setTimeout(() => {
             setUser(false);
-          }, 2000);
-        } else {
-          setUser(data);
-          console.log(data);
+          }, 10 * 1000);
         }
+      })
+      .then((data) => {
+        console.log(data);
+
+        setUser({
+          avatar: data.avatar_url,
+          bio: data.bio,
+          email: data.email,
+          createdAt: new Date(data.created_at),
+          login: data.login,
+          location: data.location,
+          blog: data.blog,
+          name: data.name,
+          repos: data.public_repos,
+          followers: data.followers,
+          following: data.following,
+          twitterName: data.twitter_username,
+          company: data.company,
+        });
+        console.log(data);
       })
       .catch((err) => {
         console.error(err);
@@ -43,7 +61,7 @@ function App() {
           noResults={user === "no results" ? true : false}
           onClick={searchFor}
         />
-        {user && <Box user={user} />}
+        {user && user !== "no results" && <Box user={user} />}
       </Layout>
     </div>
   );

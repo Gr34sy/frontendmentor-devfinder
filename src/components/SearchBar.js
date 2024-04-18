@@ -25,7 +25,7 @@ export function SearchBar({ noResults, onClick }) {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
-        {noResults && <span>No Results</span>}
+        {noResults && <span className="text-red-500 font-semibold">No Results</span>}
       </label>
       <button className="py-3 px-1 sm:px-5 bg-blue-600 hover:bg-blue-400 border-none text-white-100 sm:text-lg rounded-lg" onClick={handleClick}>
         Search
